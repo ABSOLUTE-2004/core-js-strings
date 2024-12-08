@@ -255,8 +255,12 @@ function formatTime(minutes, seconds) {
  *   reverseString('abcdef') => 'fedcba'
  *   reverseString('12345') => '54321'
  */
-function reverseString(/* str */) {
-  throw new Error('Not implemented');
+function reverseString(str) {
+  let answer = '';
+  for (let i = 1; i <= str.length; i += 1) {
+    answer += str.at(-i);
+  }
+  return answer;
 }
 
 /**
